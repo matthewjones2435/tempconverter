@@ -1,5 +1,10 @@
 # tempconverter
 
+## Its Rude Its Crude But Its Here.
+this is super basic level, I am sure that it can be done in a cleaner way (setting up methods etc for calculations) but I just hope this can 
+help by reducing the amount of time needed to make it the way any of you would prefer, its only a main activiy, with xml, things are constrained to 
+eachother and the main activity is basically just the edit texts for input, and six on click listeners for the buttons so they may do thier corresponding work
+
 
 ## What to watch out for 
 

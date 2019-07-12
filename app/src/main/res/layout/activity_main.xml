@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:id="@+id/converted_fahrenheit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/enter_fahrenheit_temp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    />
+
+
+  <EditText
+    android:id="@+id/enter_fahrenheit_temp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:hint="@string/fahren_temp"
+    android:inputType="numberSigned"
+    app:layout_constraintBottom_toTopOf="@+id/enter_celsius_temp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+  <Button
+    android:id="@+id/convert_f_to_celsius"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/convert_to_c"
+    app:layout_constraintTop_toBottomOf="@id/enter_fahrenheit_temp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/convert_f_to_kelvin"/>
+
+
+  <Button
+    android:id="@+id/convert_f_to_kelvin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/convert_to_k"
+    app:layout_constraintLeft_toRightOf="@id/convert_f_to_celsius"
+    app:layout_constraintTop_toBottomOf="@id/enter_fahrenheit_temp"
+    app:layout_constraintRight_toRightOf="parent"/>
+
+  <TextView
+    android:id="@+id/converted_celsius"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/convert_f_to_celsius"
+    app:layout_constraintBottom_toTopOf="@id/enter_celsius_temp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    />
+
+  <EditText
+    android:id="@+id/enter_celsius_temp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/cel_temp"
+    android:inputType="numberSigned"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"/>
+
+  <Button
+    android:id="@+id/convert_c_to_fahrenheit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/convert_to_f"
+    app:layout_constraintTop_toBottomOf="@id/enter_celsius_temp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/convert_c_to_kelvin"/>
+
+  <Button
+    android:id="@+id/convert_c_to_kelvin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/convert_to_k"
+    app:layout_constraintTop_toBottomOf="@id/enter_celsius_temp"
+    app:layout_constraintLeft_toRightOf="@id/convert_c_to_fahrenheit"
+    app:layout_constraintRight_toRightOf="parent"/>
+
+
+  <TextView
+    android:id="@+id/converted_kelvin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    app:layout_constraintTop_toBottomOf="@id/convert_c_to_fahrenheit"
+    app:layout_constraintBottom_toTopOf="@id/enter_kelvin_temp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"/>
+
+  <EditText
+    android:id="@+id/enter_kelvin_temp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/kel_temp"
+    android:inputType="numberSigned"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/enter_celsius_temp"
+    />
+
+  <Button
+    android:id="@+id/convert_k_to_fahrenheit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/convert_to_f"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/convert_k_to_celsius"
+    app:layout_constraintTop_toBottomOf="@+id/enter_kelvin_temp"/>
+
+  <Button
+    android:id="@+id/convert_k_to_celsius"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/convert_to_c"
+    app:layout_constraintLeft_toRightOf="@id/convert_k_to_fahrenheit"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/enter_kelvin_temp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

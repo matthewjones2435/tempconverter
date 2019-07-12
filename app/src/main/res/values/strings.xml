@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">TempConverter</string>
+  <string name="fahren_temp">Temperature in Fahrenheit</string>
+  <string name="cel_temp">Temperature in Celsius</string>
+  <string name="kel_temp">Temperature in Kelvin</string>
+  <string name="convert_to_c">Convert to \u00B0 C</string>
+  <string name="convert_to_k">Convert to \u00B0 K</string>
+  <string name="convert_to_f">Convert to \u00B0 F</string>
+</resources>

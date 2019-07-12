@@ -5,30 +5,8 @@
 
 If we do need to create this from a project that has no activity be sure to add into the manifest.xml the inent filter 
 
-it should look like this 
+it should look like the manifest that is in this project (i tried to copy and paste it but it would not display)
 
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="io.github.matthewjones2435.tempconverter">
-
-  <application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:roundIcon="@mipmap/ic_launcher_round"
-    android:supportsRtl="true"
-    android:theme="@style/AppTheme">
-    <activity
-      android:name=".MainActivity"
-      android:windowSoftInputMode="adjustResize">
-      <intent-filter >
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-  </application>
-
-</manifest>
 
 We will also need to change the layout of the objects according to his specifications 
 

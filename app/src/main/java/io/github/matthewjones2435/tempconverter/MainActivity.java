@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         String input = fahrenheit.getText().toString();
         int convertFToCelsius = Integer.parseInt(input);
         float fahrenheit2Celsius = (convertFToCelsius - 32) * ((float) 5 / (float) 9);
-        String value = String.valueOf(fahrenheit2Celsius) + "\u00B0 C";
+        String value =(fahrenheit2Celsius) + "\u00B0 C";
         //Toast.makeText(MainActivity.this,value+"°C", Toast.LENGTH_LONG).show();
         convertedFahrenheit.setText(value);
       }
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         int convertFToKelvin = Integer.parseInt(input2);
         double fahrenheit2Kelvin = (convertFToKelvin - 32) * (double) 5/9 + 273.15;
         convertedFahrenheit.setText("");
-        String valueK = String.valueOf(fahrenheit2Kelvin) + "\u00B0 K";
+        String valueK = (fahrenheit2Kelvin) + "\u00B0 K";
         convertedFahrenheit.setText(valueK);
         //Toast.makeText(MainActivity.this,valueK+"°K", Toast.LENGTH_LONG).show();
       }
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         String input3 = celsius.getText().toString();
         int celsiusToFahrenheit = Integer.parseInt(input3);
         double celsius2Fahrenheit =(celsiusToFahrenheit * (double) 9/5) + 32;
-        String valueC2F = String.valueOf(celsius2Fahrenheit) + "\u00B0 F";
+        String valueC2F = (celsius2Fahrenheit) + "\u00B0 F";
         convertedCelsius.setText(valueC2F);
       }
     });
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         int celsiusToKelvin = Integer.parseInt(input4);
         double celsius2Kelvin =celsiusToKelvin + (double) 273.15;
         convertedCelsius.setText("");
-        String valueC2K = String.valueOf(celsius2Kelvin) + " \u00B0 K";
+        String valueC2K =(celsius2Kelvin) + " \u00B0 K";
         convertedCelsius.setText(valueC2K);
       }
     });
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         String input5 = kelvin.getText().toString();
         int kelvinToFahrenheit = Integer.parseInt(input5);
         double kelvin2Fahrenheit = (kelvinToFahrenheit - 273.15) * 9/5 + 32;
-        String valueK2F = String.valueOf(kelvin2Fahrenheit) + "\u00B0 F";
+        String valueK2F = (kelvin2Fahrenheit) + "\u00B0 F";
         convertedKelvin.setText(valueK2F);
       }
     });
@@ -121,8 +121,8 @@ public class MainActivity extends AppCompatActivity {
         int kelvinToCelsius = Integer.parseInt(input6);
         double kelvin2Celsius = kelvinToCelsius - 273.15;
         convertedKelvin.setText("");
-        String valueK2F = String.valueOf(kelvin2Celsius) + "\u00B0 F";
-        convertedKelvin.setText(valueK2F);
+        String valueK2C =(kelvin2Celsius) + "\u00B0 F";
+        convertedKelvin.setText(valueK2C);
       }
     });
 

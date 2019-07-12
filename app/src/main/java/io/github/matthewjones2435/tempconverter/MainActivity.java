@@ -16,10 +16,14 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
+    //  FAHRENHEIT VIEW/INPUT/ONCLICKLISTENERS
+
     final EditText fahrenheit = findViewById(R.id.enter_fahrenheit_temp);
     final TextView convertedFahrenheit = findViewById(R.id.converted_fahrenheit);
     final Button fahrToCel = findViewById(R.id.convert_f_to_celsius);
     final Button fahrToKel = findViewById(R.id.convert_f_to_kelvin);
+
+    // FAHRENHEIT TO CELSIUS LISTENER WITH CONTROLLING CODE
 
     fahrToCel.setOnClickListener(new OnClickListener() {
       @Override
@@ -32,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         convertedFahrenheit.setText(value);
       }
     });
+
+    // FAHRENHEIT TO KELVIN LISTENER WITH CONTROLLING CODE
 
     fahrToKel.setOnClickListener(new OnClickListener() {
       @Override
@@ -46,10 +52,15 @@ public class MainActivity extends AppCompatActivity {
       }
     });
 
+
+    //  CELSIUS VIEW/INPUT/ONCLICKLISTENERS
+
     final EditText celsius = findViewById(R.id.enter_celsius_temp);
     final Button celToFahrenheit = findViewById(R.id.convert_c_to_fahrenheit);
     final Button celToKelvin = findViewById(R.id.convert_c_to_kelvin);
     final TextView convertedCelsius = findViewById(R.id.converted_celsius);
+
+    // CELSIUS TO FAHRENHEIT LISTENER WITH CONTROLLING CODE
 
     celToFahrenheit.setOnClickListener(new OnClickListener() {
       @Override
@@ -61,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
         convertedCelsius.setText(valueC2F);
       }
     });
+
+
+    // CELSIUS TO KELVIN LISTENER WITH CONTROLLING CODE
 
     celToKelvin.setOnClickListener(new OnClickListener() {
       @Override
@@ -74,10 +88,17 @@ public class MainActivity extends AppCompatActivity {
       }
     });
 
+
+    //  KELVIN VIEW/INPUT/ONCLICKLISTENERS
+
+
     final EditText kelvin = findViewById(R.id.enter_kelvin_temp);
     final Button KelToFahrenheit = findViewById(R.id.convert_k_to_fahrenheit);
     final Button KelToCelsius = findViewById(R.id.convert_k_to_celsius);
     final TextView convertedKelvin = findViewById(R.id.converted_kelvin);
+
+
+    // KELVIN TO FAHRENHEIT LISTENER WITH CONTROLLING CODE
 
     KelToFahrenheit.setOnClickListener(new OnClickListener() {
       @Override
@@ -89,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
         convertedKelvin.setText(valueK2F);
       }
     });
+
+
+    // KELVIN TO CELSIUS LISTENER WITH CONTROLLING CODE
 
     KelToCelsius.setOnClickListener(new OnClickListener() {
       @Override
